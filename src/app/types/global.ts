@@ -6,7 +6,7 @@ export interface User {
     password:string;
     likedSongs:mongoose.Types.ObjectId[];
     followingArtists:mongoose.Types.ObjectId[];
-    role:"user"
+    role:"user" 
    
 };
 
