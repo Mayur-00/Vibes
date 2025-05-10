@@ -21,12 +21,13 @@ export interface Playlist{
 export interface Song{
     title:string;
     artistId:mongoose.Types.ObjectId;
-    album:mongoose.Types.ObjectId;
+    genre:string;
+    discription:string;
     songLink:string;
-    coverImage:string;
+    coverImage?:string;
     duration:Number;
-    likes:mongoose.Types.ObjectId[];
-    playCount:number;
+    likes?:mongoose.Types.ObjectId[];
+    playCount?:number;
 
 };
 

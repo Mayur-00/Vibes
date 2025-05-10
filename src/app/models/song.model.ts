@@ -11,10 +11,8 @@ const songSchema: Schema<Song> = new Schema(
             type:mongoose.Schema.Types.ObjectId,
             ref:"Artist"
         },
-        album:{
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"Album"
-        },
+        genre:String,
+        discription:String,
         songLink:{
             type:String,
             required:true
