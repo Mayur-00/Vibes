@@ -14,9 +14,10 @@ export interface Playlist{
     title:string;
     songs:mongoose.Schema.Types.ObjectId[];
     coverImage:string;
-    creatorId:mongoose.Schema.Types.ObjectId;
+    creatorId:string;
     description:string;
 };
+
 
 export interface Song{
     title:string;
@@ -41,3 +42,4 @@ export interface Artist {
     role:"artist"
     
 }
+
